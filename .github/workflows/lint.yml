@@ -1,0 +1,22 @@
+name: lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate skills
+        run: python3 .github/scripts/validate_skills.py
+
+      - name: Lint markdown
+        uses: DavidAnson/markdownlint-cli2-action@v17
+        with:
+          globs: |
+            README.md
+            skills/**/*.md
