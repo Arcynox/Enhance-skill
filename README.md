@@ -61,6 +61,15 @@ Skills activate automatically when your agent detects a matching task — design
 
 [`examples/landing/index.html`](examples/landing/index.html) — a self-contained landing page built by applying all three skills at once: ui-ux-enhancer (hierarchy, states, dark mode, microinteractions), forms-enhancer (live validation, error recovery, dirty state), and dashboard-enhancer (KPIs with context, right-aligned numbers, table interaction). Open it in a browser and toggle the theme.
 
+<h2>Realstate CRM example</h2>
+
+![`Main dashboard`](examples/landing/1.png)
+![`Main dashboard`](examples/landing/2.png)
+![`Main dashboard`](examples/landing/3.png)
+![`Main dashboard`](examples/landing/4.png)
+![`Main dashboard`](examples/landing/5.png)
+![`Main dashboard`](examples/landing/6.png)
+
 ## Validation
 
 Skills are validated in CI on every push. To run locally:
